@@ -46,7 +46,7 @@ get_platform() {
 	if [ "$(uname)" = "Linux" ]; then
 		echo "$(uname -m)-unknown-linux-gnu"
 	elif [ "$(uname)" = "Darwin" ]; then
-		echo "$(uname -m)-apple-darwin"
+		echo "x86_64-apple-darwin"
 	else
 		echo "Unknown or unsupported machine name '$(uname)'" >&2
 		exit 1
